@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 export default function App() {
-  const fullText = "Hi, I'm [Your Name]";
+  const fullText = "Hi, I'm Chirag Veerwani";
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
 
@@ -28,15 +28,14 @@ export default function App() {
           ></span>
         </h1>
         <p className="text-gray-700 leading-relaxed">
-          Welcome to my personal space on the web! I'm a passionate writer and content creator 
-          who loves sharing thoughts, ideas, and stories. This is where I keep all my blog posts 
-          organized and easily accessible. Feel free to explore and read what interests you.
+          <a href="https://example.com/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Resume</a> | 
+          <a href="https://github.com/chiragveerwani" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline mx-2">Github</a> | 
+          <a hef="https://chirag13.substack.com/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Substack</a>
         </p>
       </header>
 
       {/* Blog Links Section */}
       <main className="px-8 pb-12 max-w-3xl mx-auto">
-        <h2 className="mb-6 text-gray-800">My Blog Posts</h2>
         <ul className="space-y-3">
           <li>
             <a 
@@ -83,7 +82,6 @@ export default function App() {
 
       {/* Footer */}
       <footer className="px-8 py-6 text-center text-gray-600 text-sm">
-        <p>© {new Date().getFullYear()} [Your Name]. All rights reserved.</p>
       </footer>
     </div>
   );
